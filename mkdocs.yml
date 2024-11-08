@@ -1,0 +1,97 @@
+---
+# Project
+site_name: dcnm-docpoc
+site_url: https://allenrobel.github.io/dcnm-docpoc
+site_author: Allen Robel
+site_description: >-
+  Ansible modules for interacting with Cisco's Nexus Dashboard
+  Fabric Controller (formerly DCNM)
+
+# Repo
+repo_name: allenrobel/dcnm-docpoc
+repo_url: https://github.com/allenrobel/dcnm-docpoc
+edit_uri: blob/mkdocs/docs/
+remote_branch: main
+
+# Configuration
+theme:
+  name: material
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - navigation.footer
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+# Extensions
+markdown_extensions:
+  - attr_list
+  - def_list
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - Test: foo.md
+  - Installation:
+      - Ansible Galaxy: installation/ansible-galaxy.md
+      - NDFC Version Compatibility: installation/dcnm-and-ndfc-version-compatibility.md
+      - Ansible Version Compatibility: installation/ansible-version-compatibility.md
+      - Supported Connections: installation/supported-connections.md
+  - Plugins:
+      - Action: plugins/action.md
+      - HTTPAPI: plugins/httpapi.md
+  - Modules:
+      - dcnm_fabric: modules/dcnm_fabric.md
+      - dcnm_image_policy: modules/dcnm_image_policy.md
+      - dcnm_image_upgrade: modules/dcnm_image_upgrade.md
+      - dcnm_image_upload: modules/dcnm_image_upload.md
+      - dcnm_interface: modules/dcnm_interface.md
+      - dcnm_inventory: modules/dcnm_inventory.md
+      - dcnm_links: modules/dcnm_links.md
+      - dcnm_maintenance_mode: modules/dcnm_maintenance_mode.md
+      - dcnm_network: modules/dcnm_network.md
+      - dcnm_policy: modules/dcnm_policy.md
+      - dcnm_resource_manager: modules/dcnm_resource_manager.md
+      - dcnm_rest: modules/dcnm_rest.md
+      - dcnm_service_node: modules/dcnm_service_node.md
+      - dcnm_service_policy: modules/dcnm_service_policy.md
+      - dcnm_service_route_peering: modules/dcnm_service_route_peering.md
+      - dcnm_template: modules/dcnm_template.md
+      - dcnm_vpc_pair: modules/dcnm_vpc_pair.md
+      - dcnm_vrf: modules/dcnm_vrf.md
