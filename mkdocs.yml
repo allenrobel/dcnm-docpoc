@@ -67,7 +67,6 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Test: foo.md
   - Installation:
       - Ansible Galaxy: installation/ansible-galaxy.md
       - NDFC Version Compatibility: installation/dcnm-and-ndfc-version-compatibility.md
