@@ -76,6 +76,7 @@ nav:
       - Action: plugins/action.md
       - HTTPAPI: plugins/httpapi.md
   - Modules:
+      - dcnm_bootflash: modules/dcnm_bootflash.md
       - dcnm_fabric: modules/dcnm_fabric.md
       - dcnm_image_policy: modules/dcnm_image_policy.md
       - dcnm_image_upgrade: modules/dcnm_image_upgrade.md
